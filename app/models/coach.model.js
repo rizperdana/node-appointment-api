@@ -1,5 +1,5 @@
 module.exports = (sequelize_db, sequelize) => {
-    const coach_model = sequelize_db.define('coach', {
+    const Coach = sequelize_db.define('coach', {
         name: { type: sequelize.STRING },
         timezone: { type: sequelize.STRING },
         day_of_week: { type: sequelize.STRING },
@@ -7,5 +7,5 @@ module.exports = (sequelize_db, sequelize) => {
         available_until: { type: sequelize.STRING },
     });
 
-    return coach_model;
+    return Coach;
 };
